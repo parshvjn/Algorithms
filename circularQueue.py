@@ -28,7 +28,16 @@ class circularQueue:
 
     
     def display(self):
-        print(self.arr)
+        if self.front == -1:
+            print("Queue is empty")
+            return
+        i = self.front
+        while True:
+            print(self.arr[i], end=' ')
+            if i == self.rear:
+                break
+            i = (i + 1) % self.size
+        print()
 
 
 if '__main__':
