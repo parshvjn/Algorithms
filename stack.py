@@ -82,3 +82,5 @@ if '__main__':
     
     [b.pop() for x in range(len(b.display())-extras+1)] # step 4: pop elements
     print(b.display(), ': new second stack (everything taken out)')
+
+    #to search insidew stacks, you would take from tail cosntantly until found desired elemet
