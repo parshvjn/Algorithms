@@ -26,7 +26,6 @@ class stack:
             self.top-=1
             self.arr.pop()
             # print(popped)
-            return True
     
     def display(self):
         # print(self.arr)

@@ -15,25 +15,24 @@ class SinglyLinkedList:
     
     def insertAtTail(self, data):
         new_node = node(data)
-        if self.head == []:
+        if self.head == None:
             self.head = new_node
             return
-        
         last = self.head
         while last.next:
             last = last.next
         last.next = new_node
     
     def deleteAtHead(self):
-        if self.head == []:
+        if self.head == None:
             return
         self.head = self.head.next
     
     def deleteAtTail(self):
-        if self.head == []:
+        if self.head == None:
             return
         if self.head.next == None:
-            self.head = []
+            self.head = None
             return
         
         second_last = self.head
